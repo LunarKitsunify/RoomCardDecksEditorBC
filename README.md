@@ -2,46 +2,96 @@
   Moon Cards Editor
 </h2>
 
-Hello everyone. 
-You probably know how annoying it is when you have to go to a special room with NPCs to edit your deck. Or even worse, you can't get into the room with NPCs while tied up. 
+MoonCE is a quality-of-life addon for Bondage Club's ClubCard minigame.
 
-This addon is designed to solve both of those issues. And so maybe for other interesting things in the future.
+MoonCE expands deck management with 20 additional deck slots, deck codes for importing and exporting decks, and a more convenient way to switch between and manage your decks.
 
-<h3>
-  Features:
+## Features
 
-- View and edit card decks in online room.
-- The character limit for the deck name has been increased from 20 to 30.
-</h3>
+### Deck Management
 
-  <summary><h3>Demonstration</h3></summary>
+- Viewing and editing ClubCard decks in rooms or when starting a game.
+- Up to **20 additional secure MoonCE deck slots**.
+- Switching between regular ClubCard decks and MoonCE decks.
+- Slightly longer deck names than those supported by ClubCard.
+- Deck import and export through shareable deck codes.
+- Card search and filtering while building a deck.
+
+### Starting a Match
+
+- Improved deck selection window.
+- Deck previews before starting a match.
+- Switching between MoonCE, Default and ClubCard decks.
+
+### Extras
+
+- MoonCE user indicators in rooms.
+- Theme addon compatibility.
+- Optional ClubCard match statistics through ClubCard Monitoring.
+
+## Demonstration
   
  ![openAddonWindow4](https://github.com/user-attachments/assets/2a12b656-c85c-40ac-8be3-68ac4b8043a8)
 
-<h2>Installation</h2>
+## ClubCard Statistics
+
+MoonCE can contribute card and match statistics to **ClubCard Monitoring** when you play against another MoonCE user.
+
+Statistics tracking is enabled by default and can be changed at any time with:
+
+- `/moonstats on` — enable statistics tracking.
+- `/moonstats off` — disable statistics tracking.
+
+You can view the collected ClubCard statistics here:
+
+[https://clubcardmonitoring.onrender.com/](https://clubcardmonitoring.onrender.com/)
+
+## Commands
+
+- `/moon` — show MoonCE commands and useful links.
+- `/moonstats on` — enable ClubCard statistics tracking.
+- `/moonstats off` — disable ClubCard statistics tracking.
+
+## Installation
 
 ### 1. FUSAM
 
-The addon is available through the FUSAM Addon Manager.
+MoonCE is available through the **FUSAM Addon Manager**.
 
-### 2. [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [ViolentMonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
+### 2. Tampermonkey or ViolentMonkey
 
-Install one of these extensions on your browser and click on the link.
+Install one of these browser extensions:
 
-Stable
-https://lunarkitsunify.github.io/MoonCEBC/MoonCEBCLoader.user.js
+- [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+- [ViolentMonkey](https://chromewebstore.google.com/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
 
-Beta
-https://lunarkitsunify.github.io/MoonCEBC/MoonCEBCLoaderBeta.user.js
+Then install one of the MoonCE loaders:
+
+**Stable**
+
+[https://lunarkitsunify.github.io/MoonCEBC/MoonCEBCLoader.user.js](https://lunarkitsunify.github.io/MoonCEBC/MoonCEBCLoader.user.js)
+
+**Beta**
+
+[https://lunarkitsunify.github.io/MoonCEBC/MoonCEBCLoaderBeta.user.js](https://lunarkitsunify.github.io/MoonCEBC/MoonCEBCLoaderBeta.user.js)
 
 ### 3. Bookmark
 
-Stable - Updated 30.04.2025
+**Stable**
+
 ```javascript
 javascript:(()=>{import("https://lunarkitsunify.github.io/MoonCEBC/MoonCEBC.js")})();
 ```
 
-Beta - Updated 30.04.2025
+**Beta**
+
 ```javascript
 javascript:(()=>{import("https://lunarkitsunify.github.io/MoonCEBC/MoonCEBCBeta.js")})();
 ```
+
+## Community & Links
+
+**BC Cards Community** - [https://discord.gg/ZByQXVHm4u](https://discord.gg/ZByQXVHm4u)
+
+**ClubCard Monitoring** - [https://clubcardmonitoring.onrender.com/](https://clubcardmonitoring.onrender.com/)
+
