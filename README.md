@@ -51,6 +51,8 @@ You can view the collected ClubCard statistics here:
 - `/moon` — show MoonCE commands and useful links.
 - `/moonstats on` — enable ClubCard statistics tracking.
 - `/moonstats off` — disable ClubCard statistics tracking.
+- `/moonselectedcards on` — enable selected cards view in deck editor.
+- `/moonselectedcards off` — disable selected cards view in deck editor.
 
 ## Installation
 
