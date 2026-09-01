@@ -30,8 +30,8 @@ MoonCE expands deck management with 20 additional deck slots, deck codes for imp
 - Optional ClubCard match statistics through ClubCard Monitoring.
 
 ## Demonstration
-  
- ![openAddonWindow4](https://github.com/user-attachments/assets/2a12b656-c85c-40ac-8be3-68ac4b8043a8)
+
+![ClubCard_animation](https://github.com/user-attachments/assets/e803b895-c7c0-4cea-ac91-4e8c5db5f749)
 
 ## ClubCard Statistics
 
