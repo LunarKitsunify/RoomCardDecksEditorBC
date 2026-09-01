@@ -1,0 +1,173 @@
+.selected-cards-container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    /* 15 rows + 14 gaps of 5px */
+    grid-auto-rows: calc((100% - 112px) / 15);
+
+    column-gap: 1px;
+    row-gap: 8px;
+
+    padding: 2px;
+    box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.selected-card-mini {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 1px 3px;
+    gap: 3px;
+
+    border: 2px solid black;
+}
+
+.selected-card-mini * {
+    pointer-events: none;
+    user-select: none;
+}
+
+.selected-card-mini img {
+    -webkit-user-drag: none;
+}
+
+.selected-card-mini-reward {
+    border-color: gold;
+}
+
+/* Required level background */
+
+.selected-card-mini-level-1 {
+    background-color: #FFFFFF;
+}
+
+.selected-card-mini-level-2 {
+    background-color: #C6C6C6;
+}
+
+.selected-card-mini-level-3 {
+    background-color: #D0FFD0;
+}
+
+.selected-card-mini-level-4 {
+    background-color: #D0D0FF;
+}
+
+.selected-card-mini-level-5 {
+    background-color: #FFD0D0;
+}
+
+
+/* Values panel */
+
+.selected-card-mini-values {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1px;
+
+    flex-shrink: 0;
+}
+
+
+/* Level / Fame / Money */
+
+.selected-card-mini-board {
+    position: relative;
+
+    height: 45%;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected-card-mini-board-icon {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+.selected-card-mini-board-text {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -40%);
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 0.6vw;
+    font-weight: bold;
+}
+
+
+/* Liability / Revealed / Event */
+
+.selected-card-mini-icon {
+    height: 45%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* Card name */
+
+.selected-card-mini-name {
+    flex: 1;
+    min-width: 0;
+
+    font-size: 0.65vw;
+    font-weight: bold;
+
+    text-align: left;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.selected-card-tooltip {
+    position: fixed;
+    z-index: 100000;
+
+    width: 440px;
+    max-width: 440px;
+
+    padding: 10px 14px;
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.96);
+    color: white;
+
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    font-size: 0.9vw;
+    line-height: 1.3;
+    font-weight: normal;
+
+    pointer-events: none;
+}

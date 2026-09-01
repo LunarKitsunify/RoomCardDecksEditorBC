@@ -24,6 +24,8 @@ export function createCard(card) {
 
     const cardImage = document.createElement('img');
     cardImage.classList.add('card-image');
+    cardImage.loading = "lazy";
+    cardImage.decoding = "async";
     cardImage.src = `Screens/MiniGame/ClubCard/${card.Type}/${card.Name}.png`;
     cardButton.appendChild(cardImage);
 

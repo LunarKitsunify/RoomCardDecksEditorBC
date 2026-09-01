@@ -11,6 +11,7 @@ export const DefaultMoonSettings = {
     DebugMode: false,
     GameStats: true,
     UseAddonDecks: false,
+    UseSelectedCardsView: false,
     DecksMode: DecksMode.BC
 };
 
@@ -18,7 +19,7 @@ export function InitSettings() {
     let syncNeeded = false;
     if (!Player.ExtensionSettings.MoonCE) {
         Player.ExtensionSettings.MoonCE = {
-            Settings: { DebugMode: false, GameStats: true, UseAddonDecks: false, DecksMode: DecksMode.BC },
+            Settings: { ...DefaultMoonSettings },
             Decks: { Deck: [], DeckName: [] }
         };
         InitMoonDefaultDecks();

@@ -1,61 +1,50 @@
-Release 1.0.0
-1. Interface for viewing and editing player decks.
+Update 1.2.26
+1. Added optional selected cards view in deck editor.
+2. Added /moonselectedcards on | off. Disabled by default.
 
-Update 1.1.0
-1. Add tooltip for Buttons
-2. Added the ability to replace the card cover and the playing board background. For the moment, without possibility of user to set own images. So it is disabled for now.
+Update 1.2.25
+1. Fix compatibility with BC R130
 
-Update 1.2.0
-1. Add Seach Input
-2. Update render big card
-3. made it compatible with the theme addon.
-4. Changed the interface storage logic. Now all UI is deleted when closing mainWindow and created again when opening it.
+Update 1.2.24
+1. A minor code optimization.
 
-Update 1.2.1 
-1. In the card groups, added spaces between words.
-2. Add ID for online players cards
-3. Combined some of the groups 
-Update 1.2.2
-1. Fixed problems with displaying default decks with default names.
+Update 1.2.23
+1. Minor code update.
+2. Fixed a bug that allowed users to edit or import cards into the default deck, even though a different deck was actually being edited.
 
-Update 1.2.3
-1. Fixed resetting the index of the selected deck to select after saving the deck.
+Update 1.2.22
+1. Minor icon updates.
+2. Preparing for the BC R130 Update
 
-Update 1.2.4
-1. Fixed bug save default deck with array DeckName == null.
+Update 1.2.21
+1. Added an additional 20 slots for decks. As well as a switch for their use in the addon window.
+2. Changed the deck selection window at game start. Now you can freely change sources of decks ( BC or Addon ).
+   Also, you can open the addon window and view decks.
+3. Added button to open addon in configurator club card game in online room.
 
-Update 1.2.5
-1. Fix synergy with Theme Addon after it's been updated.
-2. Removed the color calculation for highlighting the deck name text when editing a deck for the theme addon.
-   Now just red color.
-3. Made a check to see if all players in the room have the addon and added an icon for it.
+Update 1.2.20
+1. Add /moon chat command
+2. Added the ability to enable/disable the collection of card statistics. Usage: /moonstats on | off"
 
-Update 1.2.6
-1. Update Status icon
-2. Fixed the ability to use the addon without FUSAM. 
+Update 1.2.19
+1. Small bug fixes for statistics collection for liability cards.
+2. The logic of data reception on the site side has been changed. Now valid pairs of games from two players by gameToken are required.
 
-Update 1.2.7
-1. Now if hide all objects from the screen ( using the eye button in the chat room ), 
-   the icon from Card Editor will also be hidden. 
-2. Fixed a bug when processing cards from the beta version, which are not yet in the main game client.
+Update 1.2.18
+1. Created ClubCard Monitoring Tool (https://clubcardmonitoring.onrender.com/) — a website for tracking card statistics.
+2. Track card usage (seen / played) during matches and send stats to the website.
+3. Add new Info window in addon with useful links and project resources.
 
-Update 1.2.8
-1. Fix dont work input in room-map with w-a-s-d keys.
-2. Add draw icon, when player open addon interface for other players with addon.
+Update 1.2.17
+1. Fixed addon after bc r117 and their hotfix pack.
 
-Update 1.2.9
-1. Fix a few problem with 1.2.8
+Update 1.2.16
+1. Update searcher. Now work by Name, Text and Group.
+2. Add Export/Import buttons and logic.
+3. Add italic and bold styles in cards description
 
-Update 1.2.10
-1. Stopped using Player.OnlineSharedSettings to pass data between players due to some issues with it. And started using hidden messages.
-
-Update 1.2.11 
-1. Fix display addon icons in room.
-
-Update 1.2.12
-1. Added an adequate authorisation check, after passing which the addon will load.
-2. Fix bug, with attempt save deck < 30 or > 30.
-3. Now deck cards counter reacting if cards count != 30. 
+Update 1.2.15
+1. Stop using imgur.com for image storage and upload images to github.
 
 Update 1.2.14
 1. Fix ChatRoomMessage not return if sender null.
@@ -63,44 +52,62 @@ Update 1.2.14
 3. New icons for liability and event cards.
 4. Police and Criminals are now separate groups.
 
-Update 1.2.15
-1. Stop using imgur.com for image storage and upload images to github.
+Update 1.2.12
+1. Added an adequate authorisation check, after passing which the addon will load.
+2. Fix bug, with attempt save deck < 30 or > 30.
+3. Now deck cards counter reacting if cards count != 30.
 
-Update 1.2.16
-1. Update searcher. Now work by Name, Text and Group.
-2. Add Export/Import buttons and logic.
-3. Add italic and bold styles in cards description 
+Update 1.2.11
+1. Fix display addon icons in room.
 
-Update 1.2.17
-1. Fixed addon after bc r117 and their hotfix pack.
+Update 1.2.10
+1. Stopped using Player.OnlineSharedSettings to pass data between players due to some issues with it. And started using hidden messages.
 
-Update 1.2.18
-1. Created ClubCard Monitoring Tool (https://clubcardmonitoring.onrender.com/) — a website for tracking card statistics.
-2. Track card usage (seen / played) during matches and send stats to the website.
-3. Add new Info window in addon with useful links and project resources.
+Update 1.2.9
+1. Fix a few problem with 1.2.8
 
-Update 1.2.19
-1. Small bug fixes for statistics collection for liability cards.
-2. The logic of data reception on the site side has been changed. Now valid pairs of games from two players by gameToken are required.
+Update 1.2.8
+1. Fix dont work input in room-map with w-a-s-d keys.
+2. Add draw icon, when player open addon interface for other players with addon.
 
-Update 1.2.20
-1. Add /moon chat command
-2. Added the ability to enable/disable the collection of card statistics. Usage: /moonstats on | off"
+Update 1.2.7
+1. Now if hide all objects from the screen ( using the eye button in the chat room ),
+   the icon from Card Editor will also be hidden.
+2. Fixed a bug when processing cards from the beta version, which are not yet in the main game client.
 
-Update 1.2.21
-1. Added an additional 20 slots for decks. As well as a switch for their use in the addon window.
-2. Changed the deck selection window at game start. Now you can freely change sources of decks ( BC or Addon ). 
-   Also, you can open the addon window and view decks.
-3. Added button to open addon in configurator club card game in online room.
+Update 1.2.6
+1. Update Status icon
+2. Fixed the ability to use the addon without FUSAM.
 
-Update 1.2.22
-1. Minor icon updates.
-2. Preparing for the BC R130 Update
+Update 1.2.5
+1. Fix synergy with Theme Addon after it's been updated.
+2. Removed the color calculation for highlighting the deck name text when editing a deck for the theme addon.
+   Now just red color.
+3. Made a check to see if all players in the room have the addon and added an icon for it.
 
-Update 1.2.23
-1. Minor code update.
-2. Fixed a bug that allowed users to edit or import cards into the default deck, even though a different deck was actually being edited.
+Update 1.2.4
+1. Fixed bug save default deck with array DeckName == null.
 
-Update 1.2.24
-1. A minor code optimization.
-2. 
+Update 1.2.3
+1. Fixed resetting the index of the selected deck to select after saving the deck.
+
+Update 1.2.2
+1. Fixed problems with displaying default decks with default names.
+
+Update 1.2.1
+1. In the card groups, added spaces between words.
+2. Add ID for online players cards
+3. Combined some of the groups
+
+Update 1.2.0
+1. Add Seach Input
+2. Update render big card
+3. made it compatible with the theme addon.
+4. Changed the interface storage logic. Now all UI is deleted when closing mainWindow and created again when opening it.
+
+Update 1.1.0
+1. Add tooltip for Buttons
+2. Added the ability to replace the card cover and the playing board background. For the moment, without possibility of user to set own images. So it is disabled for now.
+
+Release 1.0.0
+1. Interface for viewing and editing player decks.
